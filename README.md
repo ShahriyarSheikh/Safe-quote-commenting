@@ -1,3 +1,3 @@
 # Web-2.0-Projekt
 
-#Details to be added soon
+#Added frontend and backend folders
