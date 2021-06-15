@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket Testing</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script>
+        var socket = io('http://localhost:3000?user=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1Y2Q1MWY4ZWVkYjAxYjQyODhiZDBmMGUiLCJuYW1lIjoianVuYWlkIGtodXJzaGlkIiwiaWF0IjoxNTU3ODI2Nzc1LCJleHAiOjE1NTc4NTU1NzV9.WTkq_ypQJmGLK1NbXSNCGtDXsTAOZdS5uvvMK5EtPhY');
+        socket.on('test', function (data) {
+            console.log(data);
+        });
+    </script>
+</body>
+
+</html>
