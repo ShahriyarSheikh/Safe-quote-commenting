@@ -1,5 +1,5 @@
-import { TempUserSessionDB } from "../core/tempUserSessions.schema";
 import { Service } from "typedi";
+import { TempUserSessionDB } from "../core/tempUserSessions.schema";
 import { TempUserSession } from "../model/DTO/tempUserSession.model";
 
 
@@ -15,7 +15,7 @@ export class TempUserSessionRepository {
     }
 
     public async deleteUserSessionAsync(userId: string): Promise<boolean> {
-        return <any>await TempUserSessionDB.findByIdAndDelete({ _id: userId }).then((res) => res != null).catch(() => false);
+        return <any>await TempUserSessionDB.findByIdAndDelete({ _id: userId }).then((res:any) => res != null).catch(() => false);
     }
 }
 
