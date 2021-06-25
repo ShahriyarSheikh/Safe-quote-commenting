@@ -1,4 +1,3 @@
-import { JsonController, Post, Body, Get, HeaderParam, Authorized, Param, UseBefore } from "routing-controllers";
 import { Service } from "typedi";
 import { UserService } from "../services/userService";
 import { UserLogin } from "../model/request-models/user/userLogin.model";
@@ -10,6 +9,7 @@ import { UserForgotPasswordResponse } from "../model/response-models/user/forgot
 import { UserPayload } from "../model/DTO/userPayload.model";
 import { EmailExistResponse } from "../model/response-models/user/emailExist.response";
 import { ThrottleMiddleware } from "../middlewares/throttleMiddleware";
+import { Authorized, Body, Get, HeaderParam, JsonController, Param, Post, UseBefore } from "routing-controllers";
 
 //api/auth/login
 @Service()
